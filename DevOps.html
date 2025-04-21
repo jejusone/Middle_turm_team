@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 로고(logo) -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/devops.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
+    <!-- 메뉴(menu) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Condensed+One&display=swap" rel="stylesheet">
+    <title>DevOps</title>
+</head>
+<body>
+<!-- 상단(로고 및 메뉴) -->
+<nav class="all">
+  <a class="mouse-memoirs-regular" id="logo" href="index.html">Insite Out</a>
+  <div class="menu">  
+      <ul class="text">
+          <li><a href="team.html" class="special-gothic-condensed-one-regular">T e a m</a></li>
+          <li><a href="DevOps.html" class="special-gothic-condensed-one-regular" id="check">D e v O p s</a></li>
+          <li><a href="IaC.html" class="special-gothic-condensed-one-regular">I a C</a></li>
+          <li><a href="Tag.html" class="special-gothic-condensed-one-regular">T a g</a></li>
+      </ul>  
+  </div>
+</nav>
+<!-- 본문(제목 및 설명) -->
+<section>
+    <h1 class="mouse-memoirs-regular">DevOps</h1>
+ <!-- DevOps 설명 -->
+<section class="intro-box">
+    <h2>DevOps의 개념</h2>
+    <p>
+      DevOps는 개발팀과 운영팀 간의 장벽을 허물고, <strong>지속적인 통합(CI)</strong>과 <strong>지속적인 배포(CD)</strong>를 통해 협업과 자동화를 강화합니다.
+    </p>
+    <p>
+      과거처럼 각 팀이 독립적으로 작업하던 방식에서 벗어나, <span class="highlight">모든 팀이 동일한 목표를 향해 유기적으로 협력</span>하는 문화를 지향합니다.
+    </p>
+    </section>
+    <br>
+    <br>
+    <section class="lifecycle">
+        <h2>DevOps의 라이프사이클</h2>
+        <img src="./img/devops.png" alt="DevOps Lifecycle" class="lifecycle-image">
+        <p>DevOps는 계획, 개발, 배포, 운영, 모니터링의 순환 과정을 통해 소프트웨어를 지속적으로 개선합니다.</p>
+  </section>
+  <!-- 구성요소 -->
+<section class="section">
+    <h2>DevOps의 구성요소</h2>
+    <div class="box-container">
+      <div class="box">
+        <h3>CI (지속적 통합)</h3>
+        <p>코드 변경 사항을 자주 병합하여 버그를 조기에 발견</p>
+      </div>
+      <div class="box">
+        <h3>CD (지속적 배포)</h3>
+        <p> 통합된 코드가 항상 배포 가능한 상태로 유지됨</p>
+      </div>
+      <div class="box">
+        <h3>자동화 & 모니터링</h3>
+        <p>빌드, 테스트, 배포, 감시 과정을 자동화</p>
+      </div>
+      <div class="box">
+        <h3>협업과 피드백</h3>
+        <p> 개발과 운영팀 간의 실시간 소통 및 상호 피드백 강화</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- 장장점 섹션 -->
+  <section class="section">
+    <h2>DevOps의 장점</h2>
+    <div class="box-container">
+      <div class="box">
+        <h3>빠른 배포</h3>
+        <p>릴리스 주기를 단축하고 변화에 빠르게 대응</p>
+      </div>
+      <div class="box">
+        <h3>높은 품질</h3>
+        <p>자동화 테스트를 통해 오류를 사전에 방지</p>
+      </div>
+      <div class="box">
+        <h3>생산성 향상</h3>
+        <p>자동화를 통해 불필요한 인력 낭비 최소화 </p>
+      </div>
+      <div class="box">
+        <h3>고객 만족도 증가</h3>
+        <p>신속한 피드백을 반영해 소프트웨어를 지속 개선</p>
+      </div>
+    </div>
+  </section>
+    <!-- 도구 섹션 -->
+  <section class="section">
+    <h2>DevOps 관련 도구</h2>
+    <div class="box-container">
+      <div class="box">
+        <h3>Docker</h3>
+        <p><img src="./img/docker.png" alt=""></p>
+      </div>
+      <div class="box">
+        <h3>쿠버네티스</h3>
+        <p><img src="./img/kubernetes.png" alt=""></p>
+      </div>
+      <div class="box">
+        <h3>Jenkins</h3>
+        <p><img src="./img/jenkins.png" alt=""></p>
+      </div>
+      <div class="box">
+        <h3>Grafana</h3>
+        <p><img src="./img/grafana.png" alt=""></p>
+
+      </div>
+    </div>
+  </section>
+</section>
+</body>
+</html>

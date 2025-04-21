@@ -1,0 +1,159 @@
+/* ###################### 로고 및 메뉴 ###################### */
+
+body {
+  background-color: aliceblue; /* body 색상 설정 */
+}
+
+.all {
+  background-color: rgb(
+    43,
+    95,
+    226
+  ); /* 로고(제목)과 메뉴를 묶은 nav 색상 설정*/
+}
+
+.mouse-memoirs-regular {
+  /* 제목 폰트 */
+  font-family: 'Mouse Memoirs', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#logo {
+  /* 로고(제목) */
+  color: rgb(255, 255, 255); /* 글자 색상 */
+  font-size: 50px; /* 글자 크기 */
+  font-weight: bold; /* 글자 볼트체 */
+  height: 70px; /* 높이 70px */
+  text-decoration: none; /* 밑줄 삭제 */
+  display: flex; /* flex 컨테이너로 만들어 아래 속성과 함께 사용되어 정렬 */
+  justify-content: center; /* 가운데 정렬  */
+}
+
+.special-gothic-condensed-one-regular {
+  /* 메뉴 폰트 및 설정 */
+  font-family: 'Special Gothic Condensed One', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(244, 254, 255); /* 글자 색상 */
+  text-decoration: none; /* 밑줄 삭제 */
+  font-size: 25px;
+}
+
+.menu {
+  /* 메뉴 설정 */
+  display: flex; /* flex 컨테이너로 만들어 아래 속성과 함께 사용되어 정렬 */
+  justify-content: center; /* 가운데 정렬  */
+}
+
+ul {
+  list-style-type: none; /* 리스트 . 제거  */
+  display: flex; /* 가로 정렬  */
+  margin-right: 170px; /* 오른쪽으로부터 170px */
+}
+
+ul li {
+  margin-left: 120px; /* 목록별 거리 (왼쪽으로부터 120px)  */
+}
+
+#check {
+  /* 선택된 페이지의 메뉴  */
+  color: rgb(141, 227, 255); /* 글자 색상  */
+  text-decoration: underline; /* 밑줄  */
+}
+
+/* ###################### 제목 및 본문 ###################### */
+
+h1 {
+  margin-top: 40px; /* 위의 요소로부터 40px */
+  margin-left: 10px; /* 왼쪽으로부터 10px */
+  font-size: 100px; /* 글자 크기 */
+}
+
+section {
+  /* 본문 */
+  padding: 50px; /* 콘텐츠 영역(본문)과 테두리 사이의 간격  */
+  font-size: 20px; /* 글자 크기 */
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* 박스 사이 간격 */
+  padding: 0 30px; /* 좌우 여백 */
+  flex-wrap: wrap; /* 화면 작아질 때 줄바꿈 가능하게 */
+}
+
+.box {
+  background-color: #ffffff; /* 흰 배경 */
+  border: 1px solid #a0c4ff; /* 연한 파란 테두리 */
+  border-radius: 8px; /* 모서리 둥글게 */
+  padding: 25px;
+  margin: 40px;
+  min-width: 700px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 */
+}
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  section {
+    padding: 50px;
+  }
+
+  .menu {
+    font-size: 20px;
+    white-space: nowrap;
+  }
+
+  ul {
+    margin-right: 130px;
+  }
+
+  ul li {
+    margin-left: 90px;
+  }
+
+  .box {
+    min-width: 500px;
+    margin: 30px;
+    padding: 20px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+  section {
+    padding: 50px;
+  }
+
+  .menu {
+    font-size: 17px;
+    white-space: nowrap;
+  }
+
+  ul {
+    margin-right: 100px;
+  }
+
+  ul li {
+    margin-left: 60px;
+  }
+
+  .box {
+    min-width: 100%;
+    margin: 20px 0;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,147 @@
+/* ###################### 로고 및 메뉴 ###################### */
+
+body{
+    background-color: aliceblue; /* body 색상 설정 */
+}
+
+.all{
+    background-color: rgb(43, 95, 226); /* 로고(제목)과 메뉴를 묶은 nav 색상 설정*/
+}
+
+.mouse-memoirs-regular { /* 제목 폰트 */
+    font-family: "Mouse Memoirs", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+#logo { /* 로고(제목) */
+    color: rgb(255, 255, 255); /* 글자 색상 */
+    font-size: 50px; /* 글자 크기 */
+    font-weight: bold; /* 글자 볼트체 */
+    height: 70px; /* 높이 70px */
+    text-decoration: none; /* 밑줄 삭제 */
+    display: flex; /* flex 컨테이너로 만들어 아래 속성과 함께 사용되어 정렬 */
+    justify-content: center; /* 가운데 정렬  */
+}
+
+.special-gothic-condensed-one-regular { /* 메뉴 폰트 및 설정 */
+    font-family: "Special Gothic Condensed One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(244, 254, 255); /* 글자 색상 */
+    text-decoration: none; /* 밑줄 삭제 */
+    font-size: 25px; 
+}  
+
+.menu{ /* 메뉴 설정 */
+    display: flex; /* flex 컨테이너로 만들어 아래 속성과 함께 사용되어 정렬 */
+    justify-content: center; /* 가운데 정렬  */
+}
+
+.menu ul{ 
+    list-style-type: none; /* 리스트 . 제거  */
+    display: flex; /* 가로 정렬  */
+    margin-right: 170px; /* 오른쪽으로부터 170px */
+}
+
+.menu ul li{
+    margin-left: 120px; /* 목록별 거리 (왼쪽으로부터 120px)  */
+}
+
+#check{ /* 선택된 페이지의 메뉴  */
+    color: rgb(141, 227, 255); /* 글자 색상  */
+    text-decoration: underline; /* 밑줄  */
+}
+
+/* ###################### 제목 및 본문 ###################### */
+
+h1{ 
+    margin-top: 40px; /* 위의 요소로부터 40px */
+    margin-left: 10px; /* 왼쪽으로부터 10px */
+    font-size: 100px;  /* 글자 크기 */
+}
+
+section {  /* 본문 */
+    padding: 50px;  /* 콘텐츠 영역(본문)과 테두리 사이의 간격  */
+    font-size: 20px; /* 글자 크기 */
+}
+
+table {  /* 도구 비교표  */
+    width: 100%;  /* 넓이 100%  */
+    border-collapse: collapse;  /* 두줄 X */
+    background-color: white;  /* 테이블 색상  */
+}
+
+th, td {  /* 제목셀과 셀 */
+    border: 1px solid #ccc; /* 테두리 1px 회색 실선 */
+    padding: 15px; /* 여백 */
+    text-align: center; /* text 중앙 정렬 */
+}
+
+th, .td_head {
+    background-color: #e6f0ff; /* 제목 셀과 1열의 첫 셀의 색상 변경 */
+}
+
+.box { /* 테라폼 기본 문법 코드들을 나눌 박스 */
+    background-color: rgba(0, 0, 0, 0.91); /* 박스 색상 */
+    color: rgb(168, 249, 255); /* 글자 색상 */
+    padding: 20px; /* 여백 */
+    margin: 10px; /* 박스끼리의 간격 */
+    border-radius: 5px; /* 테두리 곡선 */
+}
+
+/* ###################### 반응형 웹 ###################### */
+
+/* 미디어 유형이 스크린이고, 최소 너비가 600px ~ 최대 너비 1000px의 경우 적용할 css */
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+
+    section {
+        padding: 50px;
+    }
+
+    .menu{ 
+        font-size: 20px;
+        white-space: nowrap;
+    }
+
+    table, th, td {
+        padding: 8px;
+    }
+
+    img, video {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+/* 미디어 유형이 스크린이고, 최소 너비가 0px ~ 최대 너비 600px의 경우 적용할 css */
+@media screen and (min-width: 0px) and (max-width: 600px) {
+
+    section {
+        padding: 50px;
+    }
+
+    .menu { 
+        font-size: 17px;
+        white-space: nowrap;
+    }
+
+    ul{ 
+        margin-right: 100px;
+    }
+
+    ul li{
+        margin-left: 60px;
+    }
+
+    table, th, td {
+        padding: 3px;
+        font-size: 14px;
+    }
+
+    img, video {
+        width: 100%;
+        height: auto;
+    }
+}

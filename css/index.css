@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'GongGothicMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    margin: 0;
+}
+.main_container{
+    width: 100%;
+    height: 100%;
+}
+.back{
+    width: 100%;
+    height: 100%;
+}   
+/* 뒷배경 투명도 조절 */
+.back::before{
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: url("../img/main.png");
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+    opacity: 0.7;   /*투명도 조절하는 CSS*/
+}
+
+
+.team{
+    width: 450px;
+    height: 30%;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+/* 팀명 */
+.team_name{
+    font-family: 'SBAggroB';
+    text-align: center;
+    font-size: 66px;
+    position: absolute;
+    width: 400px;
+    height: 10%;
+    top: 0;
+    font-weight: 600;
+    color: rgb(0, 97, 232);
+    text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
+}
+.team_talk{
+    font-family: "Winky Rough", sans-serif;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    color: rgb(138, 162, 241);
+    text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
+    top: 90px;
+    width: 400px;
+    height: 30px;
+}
+
+/* 메뉴 */
+.menu_box_1{
+    width: 500px;
+    height: 40%;
+    position: absolute;
+    top: 0;
+}
+.menu_box_2{
+    width: 500px;
+    height: 40%;
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+}
+.menu_box_3{
+    float: right;
+    width: 500px;
+    height: 40%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.menu_box_4{
+    width: 500px;
+    height: 40%;
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+}
+
+
+a{
+    text-decoration: none;
+    color: rgb(46, 74, 251);
+}
+a:hover{
+    color: rgb(85, 63, 252);
+}
+
+.menu_1{
+    font-family: 'GongGothicMedium';
+    position: absolute;
+    right: 20%;
+    bottom: 30%;
+    opacity: 0.8;
+}
+.menu_1:hover{
+    opacity: 1;
+}
+.menu_2{
+    font-family: 'GongGothicMedium';
+    position: absolute;
+    right: 20%;
+    bottom: 30%;
+    opacity: 0.8;
+}
+.menu_2:hover{
+    opacity: 1;
+}
+.menu_3{
+    font-family: 'GongGothicMedium';
+    position: absolute;
+    left: 20%;
+    bottom: 30%;
+    opacity: 0.8;
+}
+.menu_3:hover{
+    opacity: 1;
+}.menu_4{
+    font-family: 'GongGothicMedium';
+    position: absolute;
+    left: 20%;
+    bottom: 30%;
+    opacity: 0.8;
+}
+.menu_4:hover{
+    opacity: 1;
+}
